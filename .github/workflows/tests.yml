@@ -19,8 +19,27 @@ jobs:
     name: Tests
 
     steps:
+
+
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Cache khmercut
+        id: khmercut-cache
+        uses: actions/cache@v3
+        with:
+            path: /usr/local/bin/khmercut
+            key: khmercut-0.2.0
+      - name: Download khmercut if not cached
+        if: steps.khmercut-cache.outputs.cache-hit != 'true'
+        run: wget https://github.com/semsphy/khmercut-rs/releases/download/0.2.1/khmercut-Linux-x86_64-musl.tar.gz -O /tmp/khmercut.tar.gz
+
+      - name: Extract khmercut if not cached
+        if: steps.khmercut-cache.outputs.cache-hit != 'true'
+        run: tar -xzf /tmp/khmercut.tar.gz -C /usr/local/bin
+
+      - name: Verify installation
+        run: /usr/local/bin/khmercut --version
 
       - name: Cache Dependencies
         uses: actions/cache@v4
