@@ -53,3 +53,11 @@ test('it tokenizes khmer and not english', function () {
     expect($token)->toBe($expected);
 
 });
+
+test('it tokenizes khmer and not english with | delimiter', function () {
+
+    $expected = "Pretty girl សួស្តី|ស្រី|ស្អាត Hello World សួស្តី|ពិភពលោក";
+    $token    = Tokenizer::make('Pretty girl សួស្តីស្រីស្អាត Hello World សួស្តីពិភពលោក', '|');
+    expect($token)->toBe($expected);
+
+});

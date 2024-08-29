@@ -1,8 +1,11 @@
-# Very short description of the package
+# Khmercut
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/angkor/khmercut.svg?style=flat-square)](https://packagist.org/packages/angkor/khmercut)
-[![Total Downloads](https://img.shields.io/packagist/dt/angkor/khmercut.svg?style=flat-square)](https://packagist.org/packages/angkor/khmercut)
-![GitHub Actions](https://github.com/angkor/khmercut/actions/workflows/main.yml/badge.svg)
+<p align="center">
+<a href="https://github.com/ankgordotdev/khmercut"><img src="https://github.com/ankgordotdev/khmercut/actions/workflows/tests.yml/badge.svg" alt="Status"></a>
+<a href="https://packagist.org/packages/angkor/khmercut"><img src="https://img.shields.io/packagist/dt/angkor/khmercut" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/angkor/khmercut"><img src="https://img.shields.io/packagist/v/angkor/khmercut" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/angkor/khmercut"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT" /></a>
+</p>
 
 
 
@@ -17,8 +20,17 @@ composer require angkor/khmercut
 ## Usage
 
 ```php
-// Usage description here
+use use Angkor\Khmercut\Tokenizer;
+
+Tokenizer::make('Pretty girl សួស្តីស្រីស្អាត Hello World សួស្តីពិភពលោក');
+
+//output: "Pretty girl សួស្តី\u{200B}ស្រី\u{200B}ស្អាត Hello World សួស្តី\u{200B}ពិភពលោក";
+
+Tokenizer::make('Pretty girl សួស្តីស្រីស្អាត Hello World សួស្តីពិភពលោក', '|');
+
 ```
+
+`Tokenizer` will add the `ZERO WIDTH SPACE` only Khmer Word.
 
 ### Testing
 
