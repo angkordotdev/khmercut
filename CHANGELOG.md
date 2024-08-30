@@ -1,5 +1,13 @@
 # Release Notes
 
+## 0.1.4 - 2024-08-30
+
+### What's Changed
+
+* Fixes #7 publish config file by @angkorean in https://github.com/ankgordotdev/khmercut/pull/8
+
+**Full Changelog**: https://github.com/ankgordotdev/khmercut/compare/0.1.3...0.1.4
+
 ## 0.1.3 - 2024-08-30
 
 ### What's Changed
