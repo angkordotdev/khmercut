@@ -25,7 +25,7 @@ class KhmercutServiceProvider extends ServiceProvider
     public function boot(): void
     {
         $this->publishes([
-            __DIR__.'config/config.php' => config_path('tokenizer.php'),
+            __DIR__.'/../config/config.php' => config_path('tokenizer.php'),
         ], 'config');
     }
 }
