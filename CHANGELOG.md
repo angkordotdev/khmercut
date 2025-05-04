@@ -1,5 +1,9 @@
 # Release Notes
 
+## 0.2.0 - 2025-05-04
+
+**Full Changelog**: https://github.com/angkordotdev/khmercut/compare/0.1.4...0.2.0
+
 ## 0.1.4 - 2024-08-30
 
 ### What's Changed
