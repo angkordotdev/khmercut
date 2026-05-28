@@ -29,12 +29,12 @@
         "phpstan/phpstan-deprecation-rules": "^2.0",
         "phpstan/phpstan-phpunit": "^2.0",
         "mockery/mockery": "^1.6",
-        "pestphp/pest-plugin-arch": "^3.0",
-        "pestphp/pest": "^3.0",
-        "orchestra/testbench": "^9.4",
+        "pestphp/pest-plugin-arch": "^4.0",
+        "pestphp/pest": "^4.0",
+        "orchestra/testbench": "^11.1",
         "larastan/larastan": "^3.0",
-        "pestphp/pest-plugin-laravel": "^3.0",
-        "pestphp/pest-plugin-type-coverage": "^3.0",
+        "pestphp/pest-plugin-laravel": "^4.1",
+        "pestphp/pest-plugin-type-coverage": "^4.0",
         "laravel/pint": "^1.29"
     },
     "config": {
