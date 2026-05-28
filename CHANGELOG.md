@@ -1,5 +1,12 @@
 # Release Notes
 
+## 0.3.0 - 2026-05-28
+
+ci(tests): run workflow on php 8.5
+
+- Update test matrix to run only on PHP 8.5
+- Keep CI scope limited to tests workflow
+
 ## 0.2.0 - 2025-05-04
 
 **Full Changelog**: https://github.com/angkordotdev/khmercut/compare/0.1.4...0.2.0
