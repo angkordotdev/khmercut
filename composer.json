@@ -16,9 +16,8 @@
     ],
     "require": {
         "php": "^8.3",
-        "illuminate/contracts": "^11.0|^12.0",
-        "illuminate/process": "^11.0|^12.0",
-        "laravel/pint": "^1.17"
+        "illuminate/contracts": "^11.0|^12.0|^13.0",
+        "illuminate/process": "^11.0|^12.0|^13.0"
     },
     "autoload-dev": {
         "psr-4": {
@@ -35,7 +34,8 @@
         "orchestra/testbench": "^9.4",
         "larastan/larastan": "^3.0",
         "pestphp/pest-plugin-laravel": "^3.0",
-        "pestphp/pest-plugin-type-coverage": "^3.0"
+        "pestphp/pest-plugin-type-coverage": "^3.0",
+        "laravel/pint": "^1.29"
     },
     "config": {
         "allow-plugins": {
